@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn tailwind css!</title>
+
+<!-- tailwind css link -->
+<link href="./output.css" rel="stylesheet">
+<style>
+  .regular-btn{
+    background-color: #3498bd;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+  }
+
+  .regular-btn:hover{
+    background-color: black;
+  }
+</style>
+</head>
+<body>
+  <button class="regular-btn">Regular CSS</button>
+
+  <button class="bg-[#3498bd] text-[white] p-2.5 rounded-[5px] transition-colors duration-200 ease-in-out hover:bg-black">Tailwind CSS</button>
+</body>
+</html> 
