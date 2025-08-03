@@ -15,7 +15,6 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-primary: #7fb7be;
   }
 }
 @layer base {
@@ -164,31 +163,17 @@
   }
 }
 @layer utilities {
-  .table {
-    display: table;
+  .rounded-\[5px\] {
+    border-radius: 5px;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .bg-\[\#3498bd\] {
+    background-color: #3498bd;
   }
-  .resize {
-    resize: both;
+  .p-2\.5 {
+    padding: calc(var(--spacing) * 2.5);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
-  .text-primary {
-    color: var(--color-primary);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .text-\[white\] {
+    color: white;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
@@ -208,16 +193,13 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
+  .hover\:bg-black {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-black);
+      }
+    }
+  }
 }
 @property --tw-duration {
   syntax: "*";
@@ -230,8 +212,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
     }
