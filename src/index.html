@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn tailwind css!</title>
 
-<!-- tailwind css link -->
-<link href="./output.css" rel="stylesheet">
-<style>
-
-</style>
+    <!-- tailwind css link -->
+    <link href="./output.css" rel="stylesheet">
 </head>
+
 <body class="font-primary">
-  <div>
-    <h1 class="text-primary text-3xl font-secondary " >My name is sahariar emon</h1>
-  </div>
+    <!-- Responsive card -->
+    <div class="max-w-7xl mx-auto py-20 ">
+        <div class="sm:flex gap-6 px-4 ">
+            <div class="shrink-0">
+                <img src="./images/download.jpeg" alt="" class="h-48 w-full md:h-68">
+            </div>
+            <!-- content -->
+            <div class=" md:w-1/2 mt-5 sm:mt-0">
+                <h3 class="text-lg text-violet-400 pb-2">Company Retreats</h3>
+                <h2 class="md:text-4xl  sm:text-3xl text-2xl font-bold sm:text-red-600 lg:text-blue-600 text-gray-800  mb-4">Incredible accommodation for your team</h2>
+                <p>Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of
+                places to do just that.</p>
+            </div>
+        </div>
+    </div>
 </body>
-</html> 
+
+</html>
